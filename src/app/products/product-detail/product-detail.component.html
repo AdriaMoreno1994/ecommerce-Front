@@ -1,0 +1,12 @@
+<div class="col-md-3">
+    <div class="card  mb-3 background-gray" style="width: 15rem">
+        <img [src]="product.imageUrl" class="card-img-top" alt="image">
+        <div class="card-body position-relative top-minus-20">
+            <div class="background-dark text-center position-relative top-minus-20">
+                <h5 class="card-title text-light text-padding">{{ product.name }}</h5>
+            </div>
+            <p class="card-text text-center">{{ product.price | currency: 'EUR': 'symbol' }}</p>
+        </div>
+        <button (click)="onBuyProduct()" class="btn btn-dark">Buy</button>
+    </div>
+</div>
